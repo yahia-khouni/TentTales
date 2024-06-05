@@ -1,0 +1,69 @@
+html {
+    box-sizing: border-box;
+    /* that so padding doesn't add to the width or height of elements  */
+    font-size: 100%;
+    /* to take the font size of the browser */
+    height: 100%;
+}
+
+/* wild card for all elements */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    /* to inherit the box-sizing property from the html element */
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.button-28 {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #FFFF00;
+    box-sizing: border-box;
+    color: #FFFF00;
+    cursor: pointer;
+    display: inline-block;
+
+    line-height: normal;
+    margin: 0;
+    min-width: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+}
+
+.button-28:disabled {
+    pointer-events: none;
+}
+
+.button-28:hover {
+    color: black;
+    background-color: #FFFF00;
+    border-width: 3px;
+    border-color: black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
