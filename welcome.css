@@ -17,12 +17,15 @@ p {
 
 
 .welcome {
-    height: 110vh;
+    height: 115vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url("welcome.gif");
+    /* background-image: url("welcome.gif"); */
+    background: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0) 80%, rgb(0, 0, 0) 95%), /* White fade at the bottom */
+    url('welcome.gif') no-repeat center center/cover;
     background-size: cover;
     background-position: center -1px;
     background-repeat: no-repeat;
@@ -73,4 +76,11 @@ p {
     font-size: 20px;
     font-weight: 100;
 
+}
+
+.background-fade {
+    height: 100vh; /* Full height */
+    background: 
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 1) 100%), /* White fade at the bottom */
+        url('welcome.gif') no-repeat center center/cover;
 }
